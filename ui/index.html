@@ -720,7 +720,7 @@
                                 <span class="config-value mb-2" id="config-federators-count">-</span>
                                 <span class="config-address mb-2 ml-2" id="config-federators-required"></span>
                             </div>
-                            <span class="config-title">Federators</span>
+                            <span class="config-title">Validators</span>
                             <p>
                                 The Authorities will vote the transactions to cross during the trial period. Once we implement the decentralized bridge there will be no authorities as its a fully trustless solution
                             </p>
@@ -765,7 +765,7 @@
                      <div class="row">
                         <div class="col-sm-7">
                            <div class="footer-info">
-                              <p>Rsk is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin Network to empower people and improve the quality of life of millions.</p>
+                              <p>Rsk is the most secure smart contract<span class="falsebreak"><br></span> network in the world and enables<span class="falsebreak"><br></span> decentralized applications secured by the<span class="falsebreak"><br></span> Bitcoin Network to empower people and<span class="falsebreak"><br></span> improve the quality of life of millions.</p>
                               <br/>
                               <a href="https://developers.rsk.co/" rel="nofollow noopener noreferrer" target="_blank" class="footer-button rounded" title="Start now">Start now</a>
                            </div>
@@ -1073,6 +1073,7 @@
                 // function iconFail(currentStep, html ='') {
                 //     stepIcon(currentStep, `<i class="fas fa-times text-danger"></i> ${html}`);
                 // }
+
                 async function getMaxBalance(event) {
                     if(event)
                         event.preventDefault();
@@ -1143,7 +1144,7 @@
                     .then(async (balance) => {
                         const balanceBN = new BigNumber(balance);
                         if(balanceBN.isLessThan(amountBN)) {
-                            throw new Error(`Insuficient balance in your account, your current balance is ${balanceBN.shiftedBy(-decimals)} ${token[config.networkId].symbol}`);
+                            throw new Error(`Insufficient Balance in your account, your current balance is ${balanceBN.shiftedBy(-decimals)} ${token[config.networkId].symbol}`);
                         }
                         let maxWithdrawInWei = await retry3Times(bridgeContract.methods.calcMaxWithdraw().call);
                         let maxWithdraw = BigNumber(web3.utils.fromWei(maxWithdrawInWei, 'ether'));
