@@ -1,0 +1,315 @@
+truffle migrate --network kovan
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 12487794 (0xbe8c72)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x42bbda13188d7dbcf86c9e68eed8b40c0423f46d432f49822a728c4675418463
+   > Blocks: 1            Seconds: 5
+   > contract address:    0xbBd78d965987Cbc5C3Cf88f4aB4285baB0F4dcf8
+   > block number:        21225540
+   > block timestamp:     1601358796
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.847387064
+   > gas used:            225237 (0x36fd5)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00225237 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00225237 ETH
+
+
+2_deploy_multiSigWallet.js
+==========================
+
+   Deploying 'MultiSigWallet'
+   --------------------------
+   > transaction hash:    0x96b8f8233a178d07657c13b663c375471e855ea2140b036c4cd4d611aa2450af
+   > Blocks: 1            Seconds: 5
+   > contract address:    0x03D8844C9308F9CDBE1eDb0Cb3914f9a22B2cC54
+   > block number:        21225546
+   > block timestamp:     1601358820
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.821305044
+   > gas used:            2565839 (0x2726cf)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02565839 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.02565839 ETH
+
+
+3_deploy_allowTokens.js
+=======================
+
+   Deploying 'AllowTokens'
+   -----------------------
+   > transaction hash:    0x493f001ac9845b1ffe8cee327ecdb281d8dbbc9f6884b832b1860081ed4a3c04
+   > Blocks: 1            Seconds: 5
+   > contract address:    0xB43010dfe5A6ce140B9E8a3d71e32f65aC0ECED2
+   > block number:        21225552
+   > block timestamp:     1601358844
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.807839494
+   > gas used:            1319192 (0x142118)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01319192 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01319192 ETH
+
+
+4_deploy_erc1820.js
+===================
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+5_deploy_sideTokenFactory_v0.js
+===============================
+
+   Deploying 'SideTokenFactory_v0'
+   -------------------------------
+   > transaction hash:    0xce0c0d0e1303a7e0017645bac26824042a5f62370175ccc2318047503593fc34
+   > Blocks: 2            Seconds: 5
+   > contract address:    0x48A28Bd3A88d97051fB048947942F9a34aCF542d
+   > block number:        21225560
+   > block timestamp:     1601358876
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.770436304
+   > gas used:            3685593 (0x383cd9)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03685593 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.03685593 ETH
+
+
+6_deploy_federation_v0.js
+=========================
+
+   Deploying 'Federation_v0'
+   -------------------------
+   > transaction hash:    0x347abd23d3b0000fec06475a9219361ad39279e2e13f064f5da48af46e72eb6b
+   > Blocks: 3            Seconds: 9
+   > contract address:    0xEd0c19165e79A43E88357923D3c9f70df968DC34
+   > block number:        21225566
+   > block timestamp:     1601358900
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.750851134
+   > gas used:            1931154 (0x1d7792)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01931154 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01931154 ETH
+
+
+7_deploy_bridge_v0.js
+=====================
+0x281EC8B75Eff3bbb352497AB5Fa25C3d7cd5fbcD
+
+7_deploy_bridge_v0.js
+=====================
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+8_transfer_sideTokenFactory.js
+==============================
+Bridge Address 0x281EC8B75Eff3bbb352497AB5Fa25C3d7cd5fbcD
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+9_transfer_Federation.js
+========================
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+10_conditional_deploy_mainToken.js
+==================================
+
+   Deploying 'MainToken'
+   ---------------------
+   > transaction hash:    0x16ca2cb6ea5c5cc9314949b784b9390fc8ddd8227a7b1001a1fd9ae9eaa44517
+   > Blocks: 1            Seconds: 6
+   > contract address:    0x8A376b3188e1dEfBCD54e4d9323433d2B096F77F
+   > block number:        21225601
+   > block timestamp:     1601359040
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.674284584
+   > gas used:            1242698 (0x12f64a)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01242698 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01242698 ETH
+
+
+11_deploy_sideTokenFactory_v1.js
+================================
+
+   Deploying 'SideTokenFactory_v1'
+   -------------------------------
+   > transaction hash:    0x153a13a86c0ff86b725e63576ca4a5abb9b6dfc52feff3006c204c0c1ff95eb2
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x796e81c6ba7d28BA2467f3c4DD17784578F8a51b
+   > block number:        21225607
+   > block timestamp:     1601359068
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.633841754
+   > gas used:            4016920 (0x3d4b18)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0401692 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0401692 ETH
+
+
+12_deploy_federation_v1.js
+==========================
+
+   Deploying 'Federation_v1'
+   -------------------------
+   > transaction hash:    0x93530348cf4ed79e908552500e3fec8e194643d9dd4e23156609bf109bc1093a
+   > Blocks: 1            Seconds: 5
+   > contract address:    0x1a108aB6b12E5cfFCdA0FF606Bed117Bb8187373
+   > block number:        21225628
+   > block timestamp:     1601359152
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.591297574
+   > gas used:            2098343 (0x2004a7)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02098343 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.02098343 ETH
+
+
+13_deploy_bridge_v1.js
+======================
+
+   Deploying 'Utils'
+   -----------------
+   > transaction hash:    0x4db57921122a64572240d94fbcaa570649e904e8c2ba9dc0fc766db679217bea
+   > Blocks: 2            Seconds: 5
+   > contract address:    0x8Becb95a3279b29325c7B388266C51120cDce0Bd
+   > block number:        21225636
+   > block timestamp:     1601359184
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.579095204
+   > gas used:            1117164 (0x110bec)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01117164 ETH
+
+
+   Linking
+   -------
+   * Contract: Bridge_v1 <--> Library: Utils (at address: 0x8Becb95a3279b29325c7B388266C51120cDce0Bd)
+
+   Deploying 'Bridge_v1'
+   ---------------------
+   > transaction hash:    0x1d377feb68594a83f42ed8ca4a7c450e304214c614ef4f668dea409eb0106c2d
+   > Blocks: 1            Seconds: 5
+   > contract address:    0x488E9bA1815914Cd48DB57BE550Dba29584351C8
+   > block number:        21225639
+   > block timestamp:     1601359196
+   > account:             0x50Fe4aE09765962Dd7d9AF89e640277e34BC1743
+   > balance:             0.530415884
+   > gas used:            4867932 (0x4a475c)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04867932 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.05985096 ETH
+
+
+14_set_federation_v1.js
+=======================
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+15_set_sideTokenFactory_v1.js
+=============================
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+16_create_config_file.js
+========================
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.08083439 ETH
+

@@ -89,6 +89,13 @@ module.exports = {
       gasPrice: 3500000000,
       skipDryRun: true
     },
+    elatestnet: {
+        provider: () => new HDWalletProvider(MNEMONIC, "https://rpc.elaeth.io"),
+        network_id: 3,
+        gas: 6300000,
+        gasPrice: 3500000000,
+        skipDryRun: true
+      },
   },
   plugins: ["solidity-coverage"],
   mocha: {
