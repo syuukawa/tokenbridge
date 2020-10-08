@@ -91,11 +91,18 @@ module.exports = {
     },
     elatestnet: {
         provider: () => new HDWalletProvider(MNEMONIC, "https://rpc.elaeth.io"),
-        network_id: 3,
-        gas: 6300000,
-        gasPrice: 3500000000,
+        network_id: 3, // ttp://118.190.57.207:8545
+        gas: 0x7a1200,
+        gasPrice: 10000000000,
         skipDryRun: true
-      },
+    },
+    elamainnet: {
+        provider: () => new HDWalletProvider(MNEMONIC, "https://mainrpc.elaeth.io"),
+        network_id: 1,
+        gas: 8000000,
+        gasPrice: 10000000000,
+        skipDryRun: true
+    }, 
   },
   plugins: ["solidity-coverage"],
   mocha: {
@@ -104,7 +111,7 @@ module.exports = {
   },
   compilers: {
       solc: {
-        version: "0.5.17",
+        version: "^0.5.10",
         settings: {
           optimizer: {
             enabled: false,
